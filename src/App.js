@@ -8,10 +8,14 @@ import RightSidebar from './components/RightSidebar';
 function App() {
   const [toShow, setToShow] = useState('welcome');
 
+  function toChangeShow(val) {
+    setToShow(val);
+  }
+
   return (
     <div className="App">
       <h2>Todo App</h2>
-      <TodoContainer left = {<LeftSidebar />} right = {<RightSidebar toshow={toShow} />}/>
+      <TodoContainer left = {<LeftSidebar toChangeShow = {toChangeShow}/>} right = {<RightSidebar toshow={toShow}  />}/>
     </div>
   );
 }

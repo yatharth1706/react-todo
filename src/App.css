@@ -33,3 +33,15 @@
   display: flex;
   flex-direction: column;
 }
+
+.task-input {
+  display: flex;
+  width: 70%;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+
+.task-input > input {
+  padding: 2px;
+  font-size: 15px;
+}
