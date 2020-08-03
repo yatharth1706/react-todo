@@ -36,7 +36,7 @@
 
 .task-input {
   display: flex;
-  width: 70%;
+  width: 66%;
   margin: 10px auto;
   justify-content: space-between;
 }
@@ -44,4 +44,13 @@
 .task-input > input {
   padding: 2px;
   font-size: 15px;
+}
+
+.task-lists {
+  width: 100%;
+}
+
+.taskDiv {
+  background-color: white;
+  margin-bottom: 8px;
 }
