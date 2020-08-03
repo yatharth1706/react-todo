@@ -23,3 +23,13 @@
 .left-sidebar-contents > button {
   margin-bottom: 15px;
 }
+
+.right-sidebar {
+  width: 60%;
+  padding: 20px;
+}
+
+.right-sidebar-contents {
+  display: flex;
+  flex-direction: column;
+}
