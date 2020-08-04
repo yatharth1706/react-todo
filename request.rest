@@ -1,0 +1,15 @@
+POST http://localhost:4000/add
+Content-Type: application/json
+
+{
+    "name" : "Lunch Time"
+}
+
+###
+
+GET http://localhost:4000/add/list
+Content-Type: application/json
+
+{
+    "id" : "5f2944e673c64e44940e4292"
+}
