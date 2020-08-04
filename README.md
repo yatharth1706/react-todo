@@ -1,3 +1,11 @@
+
+<h1 align = "center">Todo App</h1>
+
+Create Task            |  Show Tasks
+:-------------------------:|:-------------------------:
+![Create Task](https://raw.githubusercontent.com/yatharth1706/react-todo/master/assets/reacttodo1.PNG)  |  ![Show Tasks](https://raw.githubusercontent.com/yatharth1706/react-todo/master/assets/reactTodo2.PNG)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
