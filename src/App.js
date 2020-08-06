@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Todo App</h2>
+      <h2 className="mt-3">Todo App</h2>
       <TodoContainer left = {<LeftSidebar toChangeShow = {toChangeShow}/>} right = {<RightSidebar toshow={toShow}  />}/>
     </div>
   );

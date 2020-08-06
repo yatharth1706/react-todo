@@ -19,7 +19,7 @@ function GetTasks(props) {
     );
 
     return (
-        isLoading===false ? lists.map((task) => <div key={task.name} className = "taskDiv">{task.name}</div>) : <div><p>Loading...</p></div>
+        isLoading===false ? lists.map((task) => <div key={task.name} className = "taskDiv">{task.name}</div>) : <div><p style={{color: "white"}}>Loading...</p></div>
         
     )
 
