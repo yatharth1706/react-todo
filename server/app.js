@@ -17,6 +17,7 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
 
+app.use('/list', require('./routes/list'));
 app.use('/add', require('./routes/home'));
 
 app.listen(PORT, () => {

@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import Axios from 'axios';
 
+
+
 function CreateTask(props) {
     const [task, setTask] = useState('');
 
@@ -11,7 +13,6 @@ function CreateTask(props) {
 
     function saveTask(e) {
        e.preventDefault();
-       var items;
     //    if(localStorage.getItem('tasks')){
     //        items = JSON.parse(localStorage.getItem('tasks'));
     //        items.push(task);
@@ -32,10 +33,14 @@ function CreateTask(props) {
     }
 
     return (
+        <>
         <div className="task-input">
             <input type="text" value={task} placeholder = "Type task name" onChange = {handleInput} />
             <button className="btn btn-primary btn-sm" onClick = {saveTask}>+</button>
+            
         </div>
+        
+        </>
     )
 }
 

@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 function TodoContainer(props){
   
-
     return (
         <div className="container mt-5 todoContainer">
             {/* Inside this we will include two sidebar windows */}
+        
             <div className="left-sidebar">
                 {props.left}
             </div>
