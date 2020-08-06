@@ -19,6 +19,8 @@ const PORT = process.env.PORT || 3000;
 
 app.use('/list', require('./routes/list'));
 app.use('/add', require('./routes/home'));
+app.use('/edit', require('./routes/edit'));
+app.use('/delete', require('./routes/delete'));
 
 app.listen(PORT, () => {
     console.log(`Listening on ${PORT}`);
