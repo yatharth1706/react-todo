@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Axios from 'axios';
+import { motion } from 'framer-motion';
 
 
 
@@ -13,15 +14,6 @@ function CreateTask(props) {
 
     function saveTask(e) {
        e.preventDefault();
-    //    if(localStorage.getItem('tasks')){
-    //        items = JSON.parse(localStorage.getItem('tasks'));
-    //        items.push(task);
-    //    }else{
-    //     items = [];
-    //     items.push(task);
-    //    }
-
-    //    localStorage.setItem('tasks',JSON.stringify(items));
        
        Axios.post('http://localhost:4000/add', {
            name : task
@@ -35,8 +27,8 @@ function CreateTask(props) {
     return (
         <>
         <div className="task-input">
-            <input type="text" value={task} placeholder = "Type task name" onChange = {handleInput} />
-            <button className="btn btn-primary btn-sm" onClick = {saveTask}>+</button>
+            <motion.input type="text" value={task} placeholder = "Type task name" onChange = {handleInput} />
+            <motion.button className="btn btn-primary btn-sm" onClick = {saveTask} whileHover = {{scale : 1.1}} whileTap = {{scale : 0.8}}>+</motion.button>
             
         </div>
         

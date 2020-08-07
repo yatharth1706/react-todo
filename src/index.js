@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 import './index.css';
 import App from './App';
+import Playground from './motion-playground/motionplay';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Route exact path="/" component = {App} />
+      <Route exact path="/playground" component = {Playground} />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
