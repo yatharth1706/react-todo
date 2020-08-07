@@ -12,7 +12,7 @@ function Motion() {
         <motion.div style={{x, opacity, backgroundColor: "red", height : 100 + 'px', width: 200 + 'px'}}
         whileHover={{ scale: 1.2 }}
   whileTap={{ scale: 0.8 }}
-  
+        drag= "y"
         />
     )
 }
