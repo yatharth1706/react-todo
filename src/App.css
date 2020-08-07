@@ -3,7 +3,8 @@
 }
 
 .todoContainer {
-  max-width: 600px!important;
+  max-width: 700px!important;
+  height: 400px;
   background-color: #0f3a54;
   display: flex;
   padding: 0!important;
@@ -11,7 +12,7 @@
 
 .left-sidebar{
   padding: 20px;
-  width: 40%;
+  width: 30%;
   box-shadow: 3px 0px 3px rgb(255,255,255);
 }
 
@@ -25,8 +26,8 @@
 }
 
 .right-sidebar {
-  width: 60%;
-  padding: 20px;
+  width: 70%;
+  padding: 30px;
 }
 
 .right-sidebar-contents {
@@ -36,14 +37,24 @@
 
 .task-input {
   display: flex;
-  width: 66%;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
   margin: 10px auto;
-  justify-content: space-between;
+
 }
 
 .task-input > input {
-  padding: 2px;
+  padding-left: 20px;
   font-size: 15px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.task-input > button {
+  border-radius: 50%;
+  width: 40px;
+  height: 35px;
 }
 
 .task-lists {

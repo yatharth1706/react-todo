@@ -27,6 +27,7 @@ function CreateTask(props) {
     return (
         <>
         <div className="task-input">
+            <h2 className = "mb-2" style={{color: "white"}}>Create Task</h2>
             <motion.input type="text" value={task} placeholder = "Type task name" onChange = {handleInput} />
             <motion.button className="btn btn-primary btn-sm" onClick = {saveTask} whileHover = {{scale : 1.1}} whileTap = {{scale : 0.8}}>+</motion.button>
             

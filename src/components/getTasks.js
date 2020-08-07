@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+import {motion} from 'framer-motion';
 
 function GetTasks(props) {  
     const [lists, setLists] = useState([]);
@@ -19,8 +20,7 @@ function GetTasks(props) {
     );
 
     return (
-        isLoading===false ? lists.map((task) => <div key={task.name} className = "taskDiv">{task.name}</div>) : <div><p style={{color: "white"}}>Loading...</p></div>
-        
+        isLoading===false ? lists.map((task) => <motion.div key={task.name} className = "taskDiv" whileHover = {{scale : 1.1}} whileTap = {{scale : 0.8}}>{task.name}</motion.div>) : <div><motion.p style={{color: "white"}} animate = {{scale : [2,1,2,2,1,1]}}>Loading...</motion.p></div>
     )
 
 }
