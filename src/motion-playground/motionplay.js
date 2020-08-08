@@ -9,11 +9,14 @@ function Motion() {
     const opacity = useTransform(x,xInput,opacityRange);
 
     return (
+        <>
         <motion.div style={{x, opacity, backgroundColor: "red", height : 100 + 'px', width: 200 + 'px'}}
         whileHover={{ scale: 1.2 }}
   whileTap={{ scale: 0.8 }}
         drag= "y"
         />
+        <motion.circle cx = {500} radius = {20} color= "red" animate = {{cx : [null,100]}}/>
+        </>
     )
 }
 

@@ -65,3 +65,10 @@
   background-color: white;
   margin-bottom: 8px;
 }
+
+.modalWindow {
+  background-color: white;
+  color: black;
+  width: 100%!important;
+  height: 100%;
+}
