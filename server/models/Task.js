@@ -5,6 +5,10 @@ const TaskSchema = mongoose.Schema({
       type : String,
       requried: true
   },
+  priority: {
+    type: String,
+    required: true
+  },
   time : {
       type: Date,
       default: Date.now

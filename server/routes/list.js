@@ -13,4 +13,14 @@ router.get('/', (req,res) => {
     }
 })
 
+router.get('/:taskId', (req,res) => {
+    try {
+        Task.find({_id:req.params.taskId}).then((foundTask) => {
+            res.send(foundTask);
+        })
+    }catch(e) {
+        console.log(e);
+    }
+})
+
 module.exports = router;
